@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+        <h2>📊 Dashboard</h2>
+        <nav>
+            <ul>
+                <li><a href="#">📈 Estatísticas</a></li>
+                <li><a href="#">📊 Relatórios</a></li>
+                <li><a href="#">⚙ Configurações</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+        <h1>📊 Painel de Controle</h1>
+
+        <!-- Cards de Estatísticas -->
+        <div class="stats">
+            <div class="card">
+                <h3>👥 Usuários Ativos</h3>
+                <p id="usersCount">0</p>
+            </div>
+            <div class="card">
+                <h3>💰 Receita Total</h3>
+                <p id="revenue">R$ 0,00</p>
+            </div>
+            <div class="card">
+                <h3>📦 Produtos Vendidos</h3>
+                <p id="sales">0</p>
+            </div>
+        </div>
+
+        <!-- Gráficos -->
+        <div class="charts">
+            <canvas id="salesChart"></canvas>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
